@@ -1,0 +1,18 @@
+body{
+    background-color: #c7cad0;
+}
+h1{
+    text-align: center;
+    color: #bc6cd9;
+}
+h2{
+    color: #bc6cd9;
+}
+.regis{
+    border-radius: 8px;
+    background-color: #00ff22;
+}
+.inic{
+    border-radius: 8px;
+    background-color: #06ec25;
+}
