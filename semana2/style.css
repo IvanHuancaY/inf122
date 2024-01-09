@@ -1,0 +1,87 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --purple: #6F2CFF;
+    --light-purple: #EFE9F9;
+    --red=heart: #A50954;
+    --blue-heart: #ACD9B2;
+    --sm: 14px;
+    --md: 20px;
+    --lg: 60px;
+}
+
+body{
+    font-family: 'Nunito';
+    margin: 0;
+}
+.main{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: var(--white);
+}
+.brochure{
+    display: grid; 
+    grid-template-rows: auto 1fr auto;
+    width: 100%;
+    justify-items: center;
+    background-color: var(--white);
+}
+.title{
+    color: var(--black);
+    text-align: center;
+    font-size: var(--lg);
+}
+.subtitle{
+    color: var(--black);
+    text-align: center;
+    font-size: var(--md);
+    margin: 50px 0 50px 0;
+}
+.primari-button{
+    background-color: var(--purple);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: var(--md);
+    cursor: pointer;
+    margin: 100px 0 100px 0;
+}
+
+
+.more-info{
+    display: grid;
+    background-color: var(--light-purple);
+    width: 100%;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 16px 0 16px 0;
+}
+.icons-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 50px 260px 50px 260px;
+    justify-content: flex-start;
+}
+.card-icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 28px;
+}
+.card-icon figure img{
+    width: 50px;
+    height: 50px;
+}
+.text-icon h2{
+    font-size: var(--sm);
+    margin: 0;
+}
