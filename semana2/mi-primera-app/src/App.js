@@ -14,7 +14,6 @@ function App() {
     Aprende a trabajar en equipo resolviendo increibles acertijos
     Animate a ser"
     />
-    <EventoB />
     </div>
   );
 }
