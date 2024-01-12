@@ -1,0 +1,54 @@
+:root{
+    --while: #ffffff;
+    --black: #000000;
+    --shadow: #000
+  }
+  
+  .card-container{
+    width: 1170px;
+    height: 368px;
+    margin: 10px 10px 50px;
+    display: flex;
+    background-color: var(--while);
+    box-shadow: 0 3px 13px 1px var(--shadow);
+  }
+  
+  .card-image{
+    height: 80%;
+    width: auto;
+  }
+  
+  ,.card-content{
+    text-align: start;
+    padding: 40px;
+    font-weight: 400;
+  }
+  
+  .card-title{
+    font-size: var(--lg);
+    margin-bottom: 16px;
+  }
+  
+  .card-date .card-place{
+    font-size: var(--sm);
+  }
+  
+  .card-description{
+    font-size: var(--sm);
+    text-align: justify;
+    margin-top: 24.px;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body{
+    font-size: 18px;
+    background-color: #f5f5f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  
