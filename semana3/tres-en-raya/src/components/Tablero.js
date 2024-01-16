@@ -32,7 +32,7 @@ function Tablero({ cuadros, onClick}) {
 
 
     return(
-        
+        <div>
         <div className='tablero'>
             {renderizarCuadro(0)}
             {renderizarCuadro(1)}
@@ -43,7 +43,7 @@ function Tablero({ cuadros, onClick}) {
             {renderizarCuadro(6)}
             {renderizarCuadro(7)}
             {renderizarCuadro(8)}
-    
+            </div>
         </div>
     );
 }
