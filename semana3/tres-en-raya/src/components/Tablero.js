@@ -2,12 +2,13 @@ import React from 'react';
 import '../style/Tablero.css';
 import Cuadro from './Cuadro';
 
-function Tablero({cuadros, onClick }) {
+function Tablero({ cuadros, onClick }) {
     function renderizarCuadro(i) {
         return (
             <Cuadro
-                valor = {cuadros[i]}
-                funcion={() => onClick(i)} />
+                valor={cuadros[i]}
+                funcion={() => onClick(i)}
+            />
         );
     }
 
