@@ -1,0 +1,25 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray: #2B3E34;
+    --yellow: #d1ae31;
+    --gray-blue: #0d1423;
+    --clear-gray; #AFC0E2;      
+}
+
+body{
+    background-color: #2B2E34;
+}
+
+.main{
+    color: var(--white);
+    text-align: center;
+    font-family: Nunito;
+    font-style: normal;
+}
+.brochure{
+    display: grid; 
+    grid-template-rows: auto 1fr auto;
+    width: 100%;
+    justify-items: center;
+}

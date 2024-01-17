@@ -1,7 +1,7 @@
 :root{
     --while: #ffffff;
     --black: #000000;
-    --shadow: #000
+    --shadow: #8A795D;
   }
   
   .card-container{
@@ -10,15 +10,15 @@
     margin: 10px 10px 50px;
     display: flex;
     background-color: var(--while);
-    box-shadow: 0 3px 13px 1px var(--shadow);
+    box-shadow: 2px 3px 13px 1px var(--shadow);
   }
   
-  .card-image{
+.card-image{
     height: 80%;
     width: auto;
   }
   
-  ,.card-content{
+.card-content{
     text-align: start;
     padding: 40px;
     font-weight: 400;
@@ -44,7 +44,7 @@
     padding: 0;
   }
   
-  html,
+  html
   body{
     font-size: 18px;
     background-color: #f5f5f6;

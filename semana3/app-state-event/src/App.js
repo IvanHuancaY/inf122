@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 function App() {
   const [nroClicks, setNumCliks] = useState(0);
-const click= () => {
+  const click= () => {
   setNumCliks(nroClicks + 1);
   console.log("click");
 }

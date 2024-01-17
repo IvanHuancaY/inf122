@@ -1,10 +1,4 @@
-App{
-  display: grid;
-  width: 100px;
-  height: 200px;
-  justify-items: center;
-  align-items: center;
-}
+
 .contenedor-principal{
   margin: 20px 20px 20px 20px;
   display: flex;

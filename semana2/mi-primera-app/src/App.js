@@ -14,6 +14,15 @@ function App() {
     Aprende a trabajar en equipo resolviendo increibles acertijos
     Animate a ser"
     />
+    <EventoC title="MeetUp 11 - 3 Pitfalls de "
+    image="evento2"
+    dateLiteral="25 de noviembre de 2023"
+    placeLiteral="Online"
+    description={[
+      "¡Hola Pythonista!"
+      "Acompañanos "
+    ]}
+    />
     </div>
   );
 }
