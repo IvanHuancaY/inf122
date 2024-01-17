@@ -6,7 +6,7 @@ import NotaBasic from './components/NotaBasic';
 function App() {
   return (
     <div className="App">
-
+      <NotaBasic /> 
     </div>
   );
 }
