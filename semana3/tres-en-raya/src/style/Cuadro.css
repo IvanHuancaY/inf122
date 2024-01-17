@@ -7,3 +7,7 @@
     list-style: 100px;
     cursor: pointer;
 }
+
+.informacion-juego{
+    display: flex;
+}

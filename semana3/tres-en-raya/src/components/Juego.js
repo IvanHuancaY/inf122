@@ -1,29 +1,50 @@
 import React from 'react';
+import Historial from './Historial';
 import Tablero from './Tablero';
 import { useState } from 'react';
 
 function Juego() {
+    const [historial, setHistorial] = useState([
+        {
+            cuadros: Array(9).fill(null)
+        },
+    ]);
+    const [nroMovimiento, setNroMovimiento] = useState(0);
     const [cuadros, setCuadros] = useState(Array(9).fill(null));
     const [jugador, setJugador] = useState("X");
     const [ganador, setGanador] = useState(null);
     const click = (i) => {
-        const cuadrosTemp = [...cuadros];
-        if (cuadrosTemp[i] === null) {
-            cuadrosTemp[i] = jugador;
-            setCuadros(cuadrosTemp);
+        const nuevoMovimiento = historial.slice(0, nroMovimiento + 1);
+        console.log("nuevoMovimiento", nuevoMovimiento);
+        const movimientoActual = nuevoMovimiento[nuevoMovimiento.length - 1];
+        console.log("movimientoActual", movimientoActual);
+        const cuadros = movimientoActual.cuadros.slice();
+        console.log("cuadrosTemp", cuadros);
+        if (cuadros[i] === null) {
+            cuadros[i] = jugador;
+            setCuadros(cuadros);
             setJugador(jugador === "X" ? "O" : "X");
+            setHistorial(nuevoMovimiento.concat([{ cuadros }]));
+            setNroMovimiento(nuevoMovimiento.length);
         }
-        if (calcularGanador(cuadrosTemp) !== null) {
-            setGanador(calcularGanador(cuadrosTemp));
+        if (calcularGanador(cuadros) !== null) {
+            setGanador(calcularGanador(cuadros));
         }
     }
+    const saltarA = (movimiento) => {
+        console.log("movimiento", movimiento);
+        setNroMovimiento(movimiento);
+        setJugador(jugador === "X" ? "O" : "X");
+
+    }
+    const movimientoActual = historial[nroMovimiento];
     return (
         <div className="juego">
             <div className="juego-tablero">
                 <h2>{ganador ? `Ganador: ${ganador}` : `Próximo jugador: ${jugador}`}</h2>
-                <Tablero cuadros={cuadros} onClick={(i) => click(i)} />
+                <Tablero cuadros={movimientoActual.cuadros} onClick={(i) => click(i)} />
             </div>
-
+            <Historial historial={historial} saltarA={saltarA} />
         </div>
     );
 }
