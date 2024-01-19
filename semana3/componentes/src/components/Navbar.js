@@ -2,8 +2,8 @@ import React from "react";
 import { Link, Outlet } from "react-router-dom";
 
 function NavBar(){
-
-    return(
+return(
+        <>
         <Outlet>
         <nav>
             <ul>
@@ -21,7 +21,8 @@ function NavBar(){
                 </li>
             </ul>
         </nav>
-        </Outlet>
+        <Outlet/>
+    </>
     );
 }
 
