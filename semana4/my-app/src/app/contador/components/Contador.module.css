@@ -1,8 +1,4 @@
-:root{
-    --lg: 160px;
-    --gray: #DCDCE5;
-    --orange:  #FF872C;
-}
+
 .contador {
     min-width: 300px;
     height: auto;
