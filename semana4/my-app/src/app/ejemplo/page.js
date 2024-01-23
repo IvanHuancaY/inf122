@@ -1,8 +1,11 @@
 import React from "react";
 
-function Contador() {
-    return <h1>Contador</h1>
-    
+function Contador ({nroClicks}) {
+    return (
+        <div className="contador">
+            {nroClicks}
+        </div>
+    );
 }
 
 export default Contador;

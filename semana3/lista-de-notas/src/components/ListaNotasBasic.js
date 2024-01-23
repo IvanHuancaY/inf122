@@ -14,4 +14,26 @@ function ListaNotasBasic() {
     const onEdit = () => {
         console.log("Editar")
     };
-}
+}; 
+
+return(
+    <div className="contenedor-principal">
+        <input
+        className="input"
+        type="text"
+        value={texto}
+        onChange={ (e) => setTexto(e.target.value)}
+         />
+         <button className="boton" onClick={addNota}
+         {nota.map((nota)=>(
+            <NotaBasic
+                nota={nota}
+                onDelete={onDelete}
+                onEdit={onEdit}
+            />
+         ))}
+
+
+          />
+    </div>
+)
